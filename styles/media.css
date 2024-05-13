@@ -1,0 +1,240 @@
+@media (min-width: 640px) {
+    .container {
+        width: 80%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .subscription-form {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .footer-input {
+        flex-grow: 1;
+    }
+
+    @media (min-width: 768px) {
+        .chefs-card {
+            width: calc((100% - 30px) / 2);
+        }
+
+        .contact-card {
+            width: calc((100% - 15px) / 2);
+        }
+
+        .gallery-grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 230px 230px 80px 230px 160px 160px 160px;
+            grid-template-areas:
+                "meal-1 meal-2"
+                "meal-3 meal-2"
+                "meal-4 meal-2"
+                "meal-4 meal-5"
+                "meal-4 meal-6"
+                "meal-7 meal-6"
+                "meal-7 .";
+        }
+
+        .meal-1 {
+            grid-area: meal-1;
+        }
+
+        .meal-3 {
+            grid-area: meal-3;
+        }
+
+        .meal-2 {
+            grid-area: meal-2;
+        }
+
+        .meal-4 {
+            grid-area: meal-4;
+        }
+
+        .meal-5 {
+            grid-area: meal-5;
+        }
+
+        .meal-6 {
+            grid-area: meal-6;
+        }
+
+        .meal-7 {
+            grid-area: meal-7;
+        }
+
+        .footer-about,
+        .footer-contact {
+            width: calc((100% - 20px) / 2);
+        }
+
+        .footer-about {
+            order: 1;
+        }
+
+        .footer-contact {
+            order: 2;
+        }
+
+        .footer-subscribe {
+            order: 3;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar-links {
+        order: 2;
+        width: 50%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-link {
+        position: relative;
+        padding: 5px 15px;
+        overflow: hidden;
+    }
+
+    .navbar-home::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        width: calc((100% - 30px));
+        height: 2px;
+        background-color: #CE1212;
+    }
+
+    .navbar-a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        transform: scaleX(0);
+        transform-origin: left;
+        width: calc((100% - 30px));
+        height: 2px;
+        background-color: #CE1212;
+        transition: transform 0.3s;
+    }
+
+    .navbar-link:hover .navbar-a::after {
+        transform: scaleX(1);
+    }
+
+    .home .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .home-img,
+    .home-content {
+        width: 40%;
+    }
+
+    .home-content {
+        order: 1;
+        text-align: left;
+    }
+
+    .home-img {
+        order: 2;
+    }
+
+    .home-btns {
+        justify-content: start;
+    }
+
+    .reservation-btn {
+        border-radius: 0 50px 50px;
+    }
+
+    .chefs-card {
+        width: calc((100% - 60px) / 3);
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "meal-1 meal-2 meal-3"
+            "meal-1 meal-2 meal-3"
+            "meal-1 meal-2 meal-3"
+            "meal-4 meal-2 meal-5"
+            "meal-4 meal-2 meal-5"
+            "meal-4 meal-2 meal-5"
+            "meal-4 meal-2 meal-6"
+            "meal-4 meal-7 meal-6"
+            "meal-4 meal-7 meal-6"
+            ". meal-7 meal-6"
+            ". meal-7 .";
+    }
+
+    .meal-1 {
+        grid-area: meal-1;
+    }
+
+    .meal-5 {
+        grid-area: meal-5;
+    }
+
+    .meal-6 {
+        grid-area: meal-6;
+    }
+
+    .meal-4 {
+        grid-area: meal-4;
+    }
+
+    .meal-2 {
+        grid-area: meal-2;
+    }
+
+    .meal-7 {
+        grid-area: meal-7;
+    }
+
+    .meal-3 {
+        grid-area: meal-3;
+    }
+
+    .input-row input {
+        width: calc((100% - 15px) / 2);
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .home {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-about,
+    .footer-contact {
+        width: calc((100% - 40px) / 4);
+    }
+
+    .footer-subscribe {
+        order: 2;
+        width: calc((100% - 40px) / 2)
+    }
+
+    .footer-contact {
+        order: 3;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        width: 70%;
+    }
+}
