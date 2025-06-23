@@ -5,6 +5,14 @@
         padding-right: 5px;
     }
 
+    .navbar-links {
+        column-gap: 25px;
+    }
+
+    .mood-change {
+        font-size: 25px;
+    }
+
     .subscription-form {
         flex-direction: row;
         gap: 5px;
@@ -14,82 +22,91 @@
         flex-grow: 1;
     }
 
-    @media (min-width: 768px) {
-        .chefs-card {
-            width: calc((100% - 30px) / 2);
-        }
 
-        .contact-card {
-            width: calc((100% - 15px) / 2);
-        }
+}
 
-        .gallery-grid {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 230px 230px 80px 230px 160px 160px 160px;
-            grid-template-areas:
-                "meal-1 meal-2"
-                "meal-3 meal-2"
-                "meal-4 meal-2"
-                "meal-4 meal-5"
-                "meal-4 meal-6"
-                "meal-7 meal-6"
-                "meal-7 .";
-        }
+@media (min-width: 768px) {
+    .chefs-card {
+        width: calc((100% - 30px) / 2);
+    }
 
-        .meal-1 {
-            grid-area: meal-1;
-        }
+    .contact-card {
+        width: calc((100% - 15px) / 2);
+    }
 
-        .meal-3 {
-            grid-area: meal-3;
-        }
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 230px 230px 80px 230px 160px 160px 160px;
+        grid-template-areas:
+            "meal-1 meal-2"
+            "meal-3 meal-2"
+            "meal-4 meal-2"
+            "meal-4 meal-5"
+            "meal-4 meal-6"
+            "meal-7 meal-6"
+            "meal-7 .";
+    }
 
-        .meal-2 {
-            grid-area: meal-2;
-        }
+    .meal-1 {
+        grid-area: meal-1;
+    }
 
-        .meal-4 {
-            grid-area: meal-4;
-        }
+    .meal-3 {
+        grid-area: meal-3;
+    }
 
-        .meal-5 {
-            grid-area: meal-5;
-        }
+    .meal-2 {
+        grid-area: meal-2;
+    }
 
-        .meal-6 {
-            grid-area: meal-6;
-        }
+    .meal-4 {
+        grid-area: meal-4;
+    }
 
-        .meal-7 {
-            grid-area: meal-7;
-        }
+    .meal-5 {
+        grid-area: meal-5;
+    }
 
-        .footer-about,
-        .footer-contact {
-            width: calc((100% - 20px) / 2);
-        }
+    .meal-6 {
+        grid-area: meal-6;
+    }
 
-        .footer-about {
-            order: 1;
-        }
+    .meal-7 {
+        grid-area: meal-7;
+    }
 
-        .footer-contact {
-            order: 2;
-        }
+    .footer-about,
+    .footer-contact {
+        width: calc((100% - 20px) / 2);
+    }
 
-        .footer-subscribe {
-            order: 3;
-        }
+    .footer-about {
+        order: 1;
+    }
+
+    .footer-contact {
+        order: 2;
+    }
+
+    .footer-subscribe {
+        order: 3;
     }
 }
 
 @media (min-width: 1024px) {
+    .navlink-text {
+        display: block;
+    }
+
+    .navlink-icon {
+        display: none;
+    }
+
     .container {
         width: 90%;
     }
 
     .navbar-links {
-        order: 2;
         width: 50%;
         flex-direction: row;
         justify-content: center;
