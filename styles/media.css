@@ -26,6 +26,14 @@
 }
 
 @media (min-width: 768px) {
+    .navlink-text {
+        display: block;
+    }
+
+    .navbar-link .navlink-icon {
+        display: none;
+    }
+
     .chefs-card {
         width: calc((100% - 30px) / 2);
     }
@@ -94,14 +102,6 @@
 }
 
 @media (min-width: 1024px) {
-    .navlink-text {
-        display: block;
-    }
-
-    .navlink-icon {
-        display: none;
-    }
-
     .container {
         width: 90%;
     }

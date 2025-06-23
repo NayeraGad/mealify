@@ -161,7 +161,7 @@ a {
     display: none;
 }
 
-.navlink-icon {
+.navbar-link .navlink-icon {
     font-size: 20px;
     display: block;
 }
